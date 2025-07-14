@@ -7,18 +7,28 @@
 
   <style>
 
+    body {
+    margin: 0px;
+    }
+
+    a{
+        text-decoration: none;
+    }
+
     header{
-        color: #030303;
-        width: 1,920x;
+        background: #030303;
+        width: 1920px;
         height: 150px;
-        left: -240px;
     }
 
     .header_inner {
-        display: inline-flex;
-        width: 1,440px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 1440px;
         height: 150px;
-        left: 240px;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     #logo {
@@ -27,43 +37,117 @@
         top: 59px;
     }
 
-    #navigation {
-
-
+    .navigation {
+        position: absolute;
+        right: 240px;
+        display: flex;
+        float: right;
+        align-items: center;
         width: 775px;
         height: 26px;
-        top: 62px;
-        left: 665px;
     }
 
     .nav_text{
         font-family: 'Roboto';
         font-size: 22px;
+        font-weight: 200;
+        color: #FFFFFF;
     }
 
-    .welcome{
+    #nav_ul li{
+      list-style-type: none;
+      display: inline;
+    }
+  
 
+    .nav_li{
+    display: list-item;
+    text-align: -webkit-match-parent;
+    unicode-bidi: isolate;
     }
 
+
+    #Welcome{
+        width: 1920px;
+        height: 842px;
+        top: -32px;
+        background: #030303;
+    }
+
+    .Welcome_sec{
+        display: flex;
+        width: 1440px;
+        height: 810px;
+        margin-left: 240px;
+        margin-right: 240px;
+    }
+
+    .welcome_left_block{
+        width: 700px;
+        height: 420px;
+        top: 300px;
+        position: absolute;
+    }
+
+    .wel_text1{
+        font-family: 'Forum';
+        font-size: 80px;
+        line-height: 90px;
+        letter-spacing: 5px;
+        font-weight: 400;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        
+    }
+
+    .wel_text2{
+        font-family: 'Roboto';
+        font-size: 28px;
+        line-height: 100%;
+        letter-spacing: 2px;
+        font-weight: 300;
+        position: absolute;
+        color: #FFFFFF;
+    }
+
+    #button {
+    border-radius: 20px;
+    width:590px;
+    height:100px;
+    top: 313px;
+    background-color: #710707; 
+    }
+
+    .pagination{
+        position: absolute;
+        width: 600px;
+        height: 120px;
+        right: 240px;
+        bottom: 0;
+    }
 
   </style>
+
 </head>
 
 <body>
   <header>
     <div class="header_inner">
 
-        <div id="logo">
-            <img src="Logo.png" alt="louvre logo">
+        <div id="logo" class="nav_text">
+            <img src="./images/Logo.svg" alt="louvre logo">
         </div>
 
-        <div id="navigation">
-            <a href="#Visiting" class="nav_text">Visiting</a>
-            <a href="#Explore" class="nav_text">Explore</a>
-            <a href="#Video" class="nav_text">Video</a>
-            <a href="#Gallery" class="nav_text">Gallery</a>
-            <a href="#Tickets" class="nav_text">Tickets</a>
-            <a href="#Contacts" class="nav_text">Contacts</a>
+        <div class="navigation" class="nav_text" >
+            <ul id="nav_ul" style="min-width: max-content;">
+                <li class="nav_li"><a href="#Visiting" class="nav_text">Visiting</a></li>
+                <li class="nav_li"><a href="#Explore" class="nav_text">Explore</a></li>
+                <li class="nav_li"><a href="#Video" class="nav_text">Video</a></li>
+                <li class="nav_li"><a href="#Gallery" class="nav_text">Gallery</a></li>
+                <li class="nav_li"><a href="#Tickets" class="nav_text">Tickets</a></li>
+                <li class="nav_li"><a href="#Contacts" class="nav_text">Contacts</a></li>
+            </ul>          
+            
         </div>
 
     </div>
@@ -72,6 +156,24 @@
 <main>
 
     <section id="Welcome">
+
+        <div class="Welcome_sec">
+
+            <div style="color: #FFFFFF; position: absolute; right: 240px;">
+                <img src="./images/1.svg" alt="mona lisa ">
+            </div>
+
+            <div class="welcome_left_block">
+
+                <div class="wel_text1">Welcome</div>
+                <div class="wel_text1">to the louvre</div>
+                <div class="wel_text2" style="top: 205px;">From the castle to the museum</div>
+                <div class="wel_text2" id="button" style="font-size: 22px; align-content: center; text-align: center;">Discover the Louvre</div>
+            </div>
+
+            </div>
+
+        </div>
 
   </section>
 
@@ -102,7 +204,7 @@
 </main>
 
 <footer>
-  // Подвал сайта. Обычно здесь находится контактная информация, дополнительное меню, юридическая информация о компании
+ 
 </footer>
 </body>
 
