@@ -101,7 +101,7 @@
 
     .wel_text1{
         font-family: 'Forum';
-        font-size: 80px;
+        font-size: 65px;
         line-height: 90px;
         letter-spacing: 5px;
         font-weight: 400;
@@ -293,9 +293,99 @@
         position: relative;  
     }
 
+    #Video{
+        display: flex;
+        align-items: center;
+        width: 100%;
+        height: 1396px;
+    }
 
+    .video_section{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 1440px;
+        height: 1246px;
+        position: relative;
+        margin: auto;
+    }
+
+    .video_text{
+        display: flex;
+        align-items: center;
+        width: 700px;
+        height: 90px;
+    }
     
+    .video_video{
+        position: absolute;
+        width: 1440px;
+        height: 650px;
+        top: 165px;
+    }
 
+    .video_video2{ 
+        display: flex;
+        width: 1440px;
+        align-items: center;
+        justify-content: space-between;
+        height: 254px;
+        position: absolute;
+        top: 940px;
+    }
+
+    .video_pagination{
+        display: flex;
+        justify-content: space-between;
+        width: 200px;
+        height: 12px;
+        position: absolute;
+        top: 1226px;
+        left: 620px;
+    }
+
+
+
+
+    #Gallery{
+        width: 100%;
+        height: 2200px;
+        background-color: #030303;
+    }
+
+    .gallery_section{
+        display: flex;
+        justify-content: space-between;
+        width: 1440px;
+        height: 2200px;
+        top: 75px;
+        position: relative;
+        margin: auto;
+        flex-wrap: wrap;    
+    }
+
+    .gallery_sec_text{
+        display: flex;
+        width: 1440px;
+        height: 90px;
+    }
+
+    .gallery_sec_photo{
+        display: flex;
+        justify-content: space-between;
+        flex-direction:column;
+        width: 456px;
+        height: 1950px;
+    }
+
+    .gallery_gradient{
+        width: 1440px;
+        height: 360px;
+        top: 1765px;
+        position: absolute;
+        background: linear-gradient(to bottom,  transparent, #000000);
+    }
+    
   </style>
     
 </head>
@@ -366,7 +456,7 @@
 
     <section id="Visiting">
         <div class="visiting_area">
-            <h2 style="font-weight: 400; font-size: 80px; line-height: 90px; letter-spacing: 5px; text-transform: uppercase; margin:20px 0 20px 0; color: #9D8665">virtual tour</h2>
+            <h2 style="font-weight: 400; font-size: 65px; line-height: 90px; letter-spacing: 5px; text-transform: uppercase; margin:20px 0 20px 0; color: #9D8665">virtual tour</h2>
             <div class="line_visiting"></div>
             <div class="photos_area_visiting">
                 
@@ -438,11 +528,75 @@
   </section>
 
   <section id="Video">
+    <div class="video_section">
+
+        <div class="video_text">
+            <h2 style="font-weight: 400; font-size: 65px; line-height: 90px; letter-spacing: 5px; text-transform: uppercase; margin:20px 0 20px 0; color: #9D8665">Video journey</h2>
+        </div>
+
+        <div class="video_text">
+            <p class="explore_text"  style="color: #000000; width: 720px;" >Enter and visit one of the most famous museums in the world and enjoy masterpieces such as Mona Lisa or Hammurabi's Code</p>
+        </div>
+
+        <div class="video_video">
+            <iframe width="1440" height="650" src="https://www.youtube.com/embed/zp1BXPX8jcU?si=UxKZ3quuqOsGVig_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+
+        <div class="video_video2">
+            <iframe width="452" height="254" src="https://www.youtube.com/embed/2OR0OCr6uRE?si=i-RjVdKdFiz0f-hC&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+            <iframe width="452" height="254" src="https://www.youtube.com/embed/NOhDysLnTvY?si=15vLC3IjOlo8pXzF&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+           <iframe width="452" height="254" src="https://www.youtube.com/embed/aWmJ5DgyWPI?si=nrXINP02La8TMoMN&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+ 
+        </div>
+
+        <div class="video_pagination">
+            <img src="./images/Vector (Stroke).svg" alt="left arrow">
+            <img src="./images/Ellipse 4.svg" alt="ellips active">
+            <img src="./images/Ellipse 5.svg" alt="ellips passive">
+            <img src="./images/Ellipse 6.svg" alt="ellips passive">
+            <img src="./images/Ellipse 7.svg" alt="ellips passive">
+            <img src="./images/Ellipse 8.svg" alt="ellips passive">
+            <img src="./images/Vector (Stroke)-1.svg" alt="right arrow">
+        </div>
+                
+            </div>
 
   </section>
 
   <section id="Gallery">
+    <div class="gallery_section">
 
+        <div class="gallery_sec_text">
+            <h2 class="wel_text1" style="margin: 0 0 10px 0;">art galery</h2>
+        </div>
+
+        <div class="gallery_sec_photo" style="margin-top: 50px; height: 1910px;">
+            <img width="456" height="570" src="./images/gallery/galery2 1.svg" alt="photo of gallery">
+            <img width="456" height="570" src="./images/gallery/galery9 1.svg" alt="photo of gallery">
+            <img width="456" height="456" src="./images/gallery/galery4 1.svg" alt="photo of gallery">
+            <img width="456" height="240" src="./images/gallery/galery6 1.svg" alt="photo of gallery">
+        </div>
+
+        <div class="gallery_sec_photo" style="height: 1960px;">
+            <img width="456" height="456" src="./images/gallery/galery1 1.svg" alt="photo of gallery">
+            <img width="456" height="570" src="./images/gallery/galery8 1.svg" alt="photo of gallery">
+            <img width="456" height="570" src="./images/gallery/galery3 1.svg" alt="photo of gallery">
+            <img width="456" height="292" src="./images/gallery/galery5 1.svg" alt="photo of gallery">
+        </div>
+
+        <div class="gallery_sec_photo" style="margin-top: 50px; height: 1910px;">
+            <img width="456" height="570" src="./images/gallery/galery7 1.svg" alt="photo of gallery">
+            <img width="456" height="456" src="./images/gallery/galery10 1.svg" alt="photo of gallery">
+            <img width="456" height="456" src="./images/gallery/galery15 1.svg" alt="photo of gallery">
+            <img width="456" height="342" src="./images/gallery/galery12 1.svg" alt="photo of gallery">
+        </div>
+
+        <div class="gallery_gradient">
+            
+        </div>
+    </div>
   </section>
 
   <section id="Tickets">
