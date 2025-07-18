@@ -16,8 +16,9 @@
     }
 
     header{
+        display: flex;
         background: #030303;
-        width: 1920px;
+        width: 100%;
         height: 150px;
     }
 
@@ -29,6 +30,7 @@
         height: 150px;
         margin-left: auto;
         margin-right: auto;
+       
     }
 
     #logo {
@@ -38,10 +40,9 @@
     }
 
     .navigation {
-        position: absolute;
-        right: 240px;
+        right: 0px;
         display: flex;
-        float: right;
+        justify-content: space-between;
         align-items: center;
         width: 775px;
         height: 26px;
@@ -54,21 +55,29 @@
         color: #FFFFFF;
     }
 
-    #nav_ul li{
-      list-style-type: none;
-      display: inline;
+
+    
+    .nav_ul{
+        
+        word-spacing: 1.9505em;
+        letter-spacing: 1.9505em;
+        
+        
     }
   
 
     .nav_li{
-    display: list-item;
-    text-align: -webkit-match-parent;
-    unicode-bidi: isolate;
+        
+        display: inline-block;
+        word-spacing: normal;
+        letter-spacing: normal;
+       
+        
     }
 
 
     #Welcome{
-        width: 1920px;
+        width: 100%;
         height: 842px;
         top: -32px;
         background: #030303;
@@ -78,14 +87,15 @@
         display: flex;
         width: 1440px;
         height: 810px;
-        margin-left: 240px;
-        margin-right: 240px;
+        margin-left: auto;
+        margin-right: auto;
+        position: relative;
     }
 
     .welcome_left_block{
         width: 700px;
         height: 420px;
-        top: 300px;
+        top: 150px;
         position: absolute;
     }
 
@@ -111,23 +121,136 @@
     }
 
     #button {
-    border-radius: 20px;
-    width:590px;
-    height:100px;
-    top: 313px;
-    background-color: #710707; 
+        border-radius: 20px;
+        width:590px;
+        height:100px;
+        top: 313px;
+        background-color: #710707; 
     }
 
     .pagination{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
         position: absolute;
         width: 600px;
         height: 120px;
-        right: 240px;
+        right: 0px;
+        top: 690px;
         bottom: 0;
+        background-color: #030303;
+    }
+
+    .pagination_text{
+        font-family: 'Roboto';
+        font-size: 22px;
+        line-height: 40px;
+        letter-spacing: 0px;
+        font-weight: 400;
+        color: #FFFFFF;
+        text-transform: uppercase;
+    }
+
+    .slide{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 170px;
+        height: 16px;
+    }
+
+    .slide_pagination{
+        width: 16px;
+        height: 16px;
+        background-color: #FFFFFF;
+    }
+
+    .slide_pagination_active{
+        width: 16px;
+        height: 16px;
+        background-color: #D2B183;
+    }
+
+
+    #Visiting{
+        display: flex;
+        width: 100%;
+        height: 1256px;
+        background: #FFFFFF;
+        align-items: center;
+    }
+
+    .visiting_area{
+        display: flex;
+        flex-direction:column;
+        justify-content: space-between;
+        
+        width: 1440px;
+        height: 1116px;
+        margin: auto;
+        position: relative;
+    }
+
+    .line_visiting{
+        width: 1440px;
+        height: 3px;
+        background-color: #710707;
+    }
+
+    .photos_area_visiting{
+        display: flex;
+        width: 1440px;
+        height: 960px;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .photo_visiting{
+        display: flex;
+        width: 440px;
+        height: 424px;
+        flex-direction:column;
+        margin: auto;
+    }
+
+    .text_main_visiting{
+        font-family: 'Forum';
+        font-size: 32px;
+        line-height: 100%;
+        letter-spacing: 2px;
+        font-weight: 400;
+        color: #000000;
+        text-transform: uppercase;
+        margin:25px 0 -10px 0;
+    }
+
+    .rectangle_visiting{
+        width: 300px;
+        height: 2px;
+        background: #710707;
+        margin:20px 0 5px 0;
+    }
+
+    .text_undermain_visiting{
+        font-family: 'Roboto';
+        font-size: 22px;
+        line-height: 100%;
+        font-weight: 200;
+        color: #000000;
+        margin:10px 0 -10px 0;
+    }
+
+    .text_under_undermain_visiting{
+        font-family: 'Roboto';
+        font-size: 18px;
+        line-height: 100%;
+        font-weight: 200;
+        color: #000000;
+        margin:25px 0 -10px 0;
     }
 
   </style>
-
+    
 </head>
 
 <body>
@@ -138,8 +261,8 @@
             <img src="./images/Logo.svg" alt="louvre logo">
         </div>
 
-        <div class="navigation" class="nav_text" >
-            <ul id="nav_ul" style="min-width: max-content;">
+        <nav class="navigation" class="nav_text" >
+            <ul class="nav_ul">
                 <li class="nav_li"><a href="#Visiting" class="nav_text">Visiting</a></li>
                 <li class="nav_li"><a href="#Explore" class="nav_text">Explore</a></li>
                 <li class="nav_li"><a href="#Video" class="nav_text">Video</a></li>
@@ -148,7 +271,7 @@
                 <li class="nav_li"><a href="#Contacts" class="nav_text">Contacts</a></li>
             </ul>          
             
-        </div>
+        </nav>
 
     </div>
 </header>
@@ -159,8 +282,8 @@
 
         <div class="Welcome_sec">
 
-            <div style="color: #FFFFFF; position: absolute; right: 240px;">
-                <img src="./images/1.svg" alt="mona lisa ">
+            <div style="color: #FFFFFF; flex: 1 0 0%; text-align:right;">
+                <img style="vertical-align:top; max-width: 100%; max-height: 100%;" src="./images/1.svg" alt="mona lisa ">
             </div>
 
             <div class="welcome_left_block">
@@ -170,6 +293,23 @@
                 <div class="wel_text2" style="top: 205px;">From the castle to the museum</div>
                 <div class="wel_text2" id="button" style="font-size: 22px; align-content: center; text-align: center;">Discover the Louvre</div>
             </div>
+            
+            <div class="pagination" >
+                <div class="pagination_text">01|05</div>
+                
+                <div class="slide">
+                    <div class="slide_pagination_active"></div>
+                    <div class="slide_pagination"></div>
+                    <div class="slide_pagination"></div>
+                    <div class="slide_pagination"></div>
+                    <div class="slide_pagination"></div>
+                </div>
+                
+                <div class="pagination_text" >
+                    <img src="./images/arrow_left.svg" alt="arrow left">
+                    <img src="./images/arrow_right.svg" alt="arrow rifght">
+                </div>
+            </div>
 
             </div>
 
@@ -178,7 +318,56 @@
   </section>
 
     <section id="Visiting">
+        <div class="visiting_area">
+            <h2 style="font-weight: 400; font-size: 80px; line-height: 90px; letter-spacing: 5px; text-transform: uppercase; margin:20px 0 20px 0; color: #9D8665">virtual tour</h2>
+            <div class="line_visiting"></div>
+            <div class="photos_area_visiting">
+                
+                <div class="photo_visiting">
+                    <img src="./images/Rectangle.svg" alt="photo_visiting">
+                    <h3 class="text_main_visiting">royal palace</h3>
+                    <div class="rectangle_visiting"></div>
+                    <h3 class="text_undermain_visiting">360&deg;C Virtual Tour</h3>
+                    <h3 class="text_under_undermain_visiting">Google Street Panorama View</h3>
+                </div>
+                <div class="photo_visiting">
+                    <img src="./images/Rectangle (1).svg" alt="photo_visiting">
+                    <h3 class="text_main_visiting">denon wing</h3>
+                    <div class="rectangle_visiting"></div>
+                    <h3 class="text_undermain_visiting">360&deg;C Virtual Tour</h3>
+                    <h3 class="text_under_undermain_visiting">Google Street Panorama View</h3>
+                </div>
+                <div class="photo_visiting">
+                    <img src="./images/Rectangle (2).svg" alt="photo_visiting">
+                    <h3 class="text_main_visiting">colonnade perrault</h3>
+                    <div class="rectangle_visiting"></div>
+                    <h3 class="text_undermain_visiting">360&deg;C Virtual Tour</h3>
+                    <h3 class="text_under_undermain_visiting">Google Street Panorama View</h3>
+                </div>
+                <div class="photo_visiting">
+                    <img src="./images/Rectangle (3).svg" alt="photo_visiting">
+                    <h3 class="text_main_visiting">greek hall</h3>
+                    <div class="rectangle_visiting"></div>
+                    <h3 class="text_undermain_visiting">360&deg;C Virtual Tour</h3>
+                    <h3 class="text_under_undermain_visiting">Google Street Panorama View</h3>
+                </div>
+                <div class="photo_visiting">
+                    <img src="./images/Rectangle (4).svg" alt="photo_visiting">
+                    <h3 class="text_main_visiting">mona lisa</h3>
+                    <div class="rectangle_visiting"></div>
+                    <h3 class="text_undermain_visiting">360&deg;C Virtual Tour</h3>
+                    <h3 class="text_under_undermain_visiting">Google Street Panorama View</h3>
+                </div>
+                <div class="photo_visiting">
+                    <img src="./images/Rectangle (5).svg" alt="photo_visiting">
+                    <h3 class="text_main_visiting">night palace</h3>
+                    <div class="rectangle_visiting"></div>
+                    <h3 class="text_undermain_visiting">360&deg;C Virtual Tour</h3>
+                    <h3 class="text_under_undermain_visiting">Google Street Panorama View</h3>
+                </div>
 
+            </div>
+        </div>
   </section>
 
   <section id="Explore">
