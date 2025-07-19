@@ -76,7 +76,7 @@
     }
 
 
-    #Welcome{
+     #Welcome{
         width: 100%;
         height: 842px;
         top: -32px;
@@ -385,7 +385,141 @@
         position: absolute;
         background: linear-gradient(to bottom,  transparent, #000000);
     }
-    
+
+
+    #Tickets{
+
+        display: flex;
+        align-items: center;
+        width: 100%;
+        height: 893px;
+
+    }
+
+    .tickets_sec{
+
+        display: flex;
+        
+        flex-direction:column;
+        justify-content: space-between;
+        width: 1440px;
+        height: 743px;
+        margin: auto;
+    }
+
+    .tickets_text{
+        display: flex;
+        
+        flex-direction:column;
+        justify-content: space-between;
+        width: 1440px;
+        height: 133px;
+        
+    }
+
+    .tickets_photo_and_amount{
+        width: 1440px;
+        height: 550px;
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+    }
+
+    .tickets_photo{
+        width: 720px;
+        height: 550px;
+        display: flex;
+    }
+
+    .tickets_amount{
+        width: 660px;
+        height: 720px;
+        display: flex;
+        position: relative;
+        justify-content: space-between  ;
+    }
+
+    .tickets_type{
+        width: 270px;
+        height: 211px;
+        justify-content: space-between;
+        display: flex;
+        position: relative;
+        flex-direction:column;
+        
+    }
+
+    .tickets_form{
+        width: 270px;
+        height: 168px;
+        justify-content: space-around;
+        display: flex;
+        position: absolute;
+        top: 83px;
+        flex-direction:column;        
+    }
+
+    .tickets_amount2{
+        width: 175px;
+        height: 550px;
+        display: flex;
+        position: relative;
+        margin-right: 0;
+        justify-content: end;
+    }
+
+    .ticlets_text_type1{
+        font-family: 'Roboto';
+        font-size: 28px;
+        line-height: 100%;
+        letter-spacing: 0%;
+        font-weight: 700;
+        color: #000000;
+        margin: 0 0 20px 0;
+    }
+
+    .ticlets_text_type2{
+        font-family: 'Roboto';
+        font-size: 22px;
+        line-height: 100%;
+        letter-spacing: 0%;
+        font-weight: 300;
+        color: #000000;
+    }
+
+    .tickets_amount3{
+        width: 150px;
+        height: 190px;
+        display: flex;
+        position: absolute;
+        top: 58px;
+        margin-right: 0;
+        flex-direction:column; 
+        justify-content: space-between;
+    }
+
+    .tickets_box{
+        width: 147px;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        border: 3px solid #000000;
+        justify-content: space-between;
+    }
+
+    .tickets_button{
+        width: 175px;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #030303;
+        border-radius: 2px;
+        position: absolute;
+        top: 393px;
+    }
+
+
   </style>
     
 </head>
@@ -511,7 +645,7 @@
     <div class="explore_section">
 
         <div class="explore_left_section">
-            <p class="wel_text1" style="font-size: 65px; margin:15px 0 -10px 0;">picture explore</p>
+            <h1 class="wel_text1" style="font-size: 65px; margin: 15px 0 20px 0;">picture explore</h1>
             <div class="rectangle_visiting" style="width: 660px;"></div>
             <p class="explore_text">Las Meninas is a 1656 painting by Diego Velázquez, the leading artist of the Spanish Golden Age.</p>
             <p class="explore_text">It was cleaned in 1984 to remove a <span style="color: rgb(242, 255, 0);">"yellow veil"</span> of dust that had gathered since the previous restoration in the 19th century.</p>
@@ -600,8 +734,79 @@
   </section>
 
   <section id="Tickets">
+    <div class="tickets_sec ">
 
+        <div class="tickets_text">
+            <h2 style="font-weight: 400; font-size: 65px; line-height: 90px; letter-spacing: 5px; text-transform: uppercase; margin:20px 0 20px 0; color: #9D8665">buy tickets</h2>
+            <div class="line_visiting"></div>
+        </div>
+
+        
+
+        <div class="tickets_photo_and_amount">
+
+            <div class="tickets_photo">
+                <img src="./images/art_ticket.svg" alt="pictiure of classic art">
+            </div>
+
+            <div class="tickets_amount">
+                <div class="tickets_type">
+                    <h3 class="ticlets_text_type1">Ticket Type</h3>
+                    <form class="tickets_form">
+                        <div class="ticlets_text_type2">  
+                            <input type="radio" id="PE" name="drone" name="question">
+                            <label for="PE">Permanent exhibition</label>
+                        </div>
+                        <div class="ticlets_text_type2">  
+                            <input type="radio" id="TE" name="drone" name="question">
+                            <label for="PE">Temporary exhibition</label>
+                        </div>
+                        <div class="ticlets_text_type2">  
+                            <input type="radio" id="CA" name="drone" name="question">
+                            <label for="CA">Combined Admission</label>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="tickets_amount2">
+                    
+                    <h3 class="ticlets_text_type1" >Amount</h3>
+                    
+                    
+                    <div class="tickets_amount3">
+
+                        <p class="ticlets_text_type2" style="margin-bottom: 15px;">Basic 18+</p>
+
+                        <div class="tickets_box">
+                            <p class="ticlets_text_type2" style="margin-left: 15px;">-</p>
+                            <p class="ticlets_text_type2" >1</p>
+                            <p class="ticlets_text_type2" style="margin-right: 15px;">+</p>
+                        </div>
+
+                        <p class="ticlets_text_type2" style="margin-top: 10px; margin-bottom: 15px;">Basic 18+</p>
+
+                        <div class="tickets_box">
+                            <p class="ticlets_text_type2" style="margin-left: 15px;">-</p>
+                            <p class="ticlets_text_type2" >1</p>
+                            <p class="ticlets_text_type2" style="margin-right: 15px;">+</p>
+                        </div>
+                    </div>
+
+                    <h3 class="ticlets_text_type1" style="position: absolute; top: 300px;">Total €220</h3>
+
+                        <button class="tickets_button">
+                            <p style="font-weight: 300; font-size: 22px; line-height: 100%; letter-spacing: 2px;  color: #FFFFFF">Buy now</p>
+                        </button>
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
   </section>
+
+  <img width="100%" height="400px" src="./images/parallax 1.svg" alt="parallax photo">
 
   <section id="Contacts">
 
