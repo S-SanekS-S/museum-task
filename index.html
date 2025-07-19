@@ -520,6 +520,66 @@
     }
 
 
+
+     #Contacts{
+
+        display: flex;
+        align-items: center;
+        width: 100%;
+        height: 963px;
+
+    }
+
+    .Contacts_sec{
+
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 1440px;
+        height: 813px;
+        margin: auto;
+        position: relative;
+    }
+
+    .Contacts_head{
+        display: flex;
+        
+        flex-direction:column;
+        justify-content: space-between;
+        width: 1440px;
+        height: 133px;
+        
+    }
+
+    .Contacts_text{
+        display: flex;
+        justify-content: space-between;
+        width: 282px;
+        flex-direction:column;
+        height: 244px;
+        position: absolute;
+        top: 193px;
+    }
+
+    .Contacts_text2{
+        display: flex;
+        justify-content: space-between;
+        width: 282px;
+        flex-direction:column;
+        height: 128px;
+        position: absolute;
+        top: 116px;
+    }
+
+    .Contacts_photo{
+        width: 960px;
+        height: 620px;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        
+    }
+
   </style>
     
 </head>
@@ -809,7 +869,30 @@
   <img width="100%" height="400px" src="./images/parallax 1.svg" alt="parallax photo">
 
   <section id="Contacts">
+    <div class="Contacts_sec">
 
+        <div class="Contacts_head">
+            <h2 style="font-weight: 400; font-size: 65px; line-height: 90px; letter-spacing: 5px; text-transform: uppercase; margin:20px 0 20px 0; color: #9D8665">Contacts</h2>
+            <div class="line_visiting"></div>
+        </div>
+
+        <div class="Contacts_text">
+
+            <p style="font-family: 'Roboto'; font-weight: 500; font-size: 28px; line-height: 100%; letter-spacing: 0%; margin-top: 0; color: #000000">Palais Royal Musee du Louvre</p>
+
+            <div class="Contacts_text2">
+                <p style="font-family: 'Roboto'; font-weight: 300; font-size: 22px; line-height: 100%; letter-spacing: 0%; margin:0 0 0 0; color: #000000" >adress: 75001 Paris, France</p>
+                <p style="font-family: 'Roboto'; font-weight: 300; font-size: 22px; line-height: 100%; letter-spacing: 0%; margin:0 0 0 0; color: #000000">phone: +33(0) 1 40 20 50 50</p>
+                <p style="font-family: 'Roboto'; font-weight: 300; font-size: 22px; line-height: 100%; letter-spacing: 0%; margin:0 0 0 0; color: #000000">mail: info@louvre.fr</p>
+            </div>
+        </div>
+
+        <div class="Contacts_photo">
+
+            <img src="./images/map.svg" alt="map">
+
+        </div>
+    </div>
   </section>
   
 </main>
