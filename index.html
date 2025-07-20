@@ -30,6 +30,7 @@
         height: 150px;
         margin-left: auto;
         margin-right: auto;
+        position: relative;
        
     }
 
@@ -40,6 +41,7 @@
     }
 
     .navigation {
+        position: absolute;
         right: 0px;
         display: flex;
         justify-content: space-between;
@@ -580,6 +582,108 @@
         
     }
 
+    footer{
+        display: flex;
+        align-items: center;
+        width: 100%;
+        height: 392px;
+        background-color: #030303;
+    }
+
+    .footer_sec{
+        display: flex;
+        justify-content: space-between;
+        width: 1440px;
+        height: 392px;
+        margin: auto;
+        position: relative;
+    }
+
+    .footer_sec_text1{
+        width: 1440px;
+        height: 135px;
+        position: absolute;
+        top: 75px;
+    }
+
+    .footer_sec_logo{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 220px;
+        height: 50px;
+        position: absolute;
+        font-family: 'Forum';
+        font-size: 28px;
+        line-height: 100%;
+        letter-spacing: 5px;
+        font-weight: 400;
+        text-transform: uppercase;
+        color: #ffffff;
+    }
+
+    .footer_sec_text2{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 363px;
+        height: 128px;
+        position: absolute;
+        top: 9px;
+        left: 340px;
+    }
+
+    .footer_sec_text2_2{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        width: 107px;
+        height: 128px;
+        font-family: 'Roboto';
+        font-size: 22px;
+        line-height: 100%;
+        letter-spacing: 2px;
+        font-weight: 200;
+        color: #ffffff;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    .footer_sec_icon{
+        display: flex;
+        justify-content: space-between;
+        width: 340px;
+        height: 48px;
+        position: absolute;
+        top: 87px;
+        left: 1100px;
+    }
+
+    .footer_line{
+        width: 100%;
+        height: 3px;
+        background: #666666;
+        position: absolute;
+        top: 265px;
+    }
+
+    .footer_sec_last_line{
+        display: flex;
+        justify-content: space-between;
+        width: 1440px;
+        height: 24px;
+        position: absolute;
+        top: 318px;
+        font-family: 'Roboto';
+        font-size: 22px;
+        line-height: 100%;
+        letter-spacing: 2px;
+        font-weight: 200;
+        color: #ffffff;
+        
+    }
+    
+
   </style>
     
 </head>
@@ -588,9 +692,10 @@
   <header>
     <div class="header_inner">
 
-        <div id="logo" class="nav_text">
-            <img src="./images/Logo.svg" alt="louvre logo">
-        </div>
+        <div class="footer_sec_logo">
+                <img src="./images/Vector.svg" alt="logo">
+                <p style="margin-top: 0; margin-bottom: 0;">louvre</p>
+            </div>
 
         <nav class="navigation" class="nav_text" >
             <ul class="nav_ul">
@@ -898,7 +1003,46 @@
 </main>
 
 <footer>
- 
+    <div class="footer_sec">
+
+        <div class="footer_sec_text1">
+
+            <div class="footer_sec_logo">
+                <img src="./images/Vector.svg" alt="logo">
+                <p style="margin-top: 0; margin-bottom: 0;">louvre</p>
+            </div>
+
+            <div class="footer_sec_text2">
+                <div class="footer_sec_text2_2">
+                    <p style="margin-top: 0; margin-bottom: 0;"><a href="#Visiting" class="nav_text">Visiting</a></p>
+                    <p style="margin-top: 0; margin-bottom: 0;"><a href="#Explore" class="nav_text">Explore</a></p>
+                    <p style="margin-top: 0; margin-bottom: 0;"><a href="#Video" class="nav_text">Video</a></p>
+                </div>
+
+                <div class="footer_sec_text2_2">
+                    <p style="margin-top: 0; margin-bottom: 0;"><a href="#Gallery" class="nav_text">Gallery</a></p>
+                    <p style="margin-top: 0; margin-bottom: 0;"><a href="#Tickets" class="nav_text">Tickets</a></p>
+                    <p style="margin-top: 0; margin-bottom: 0;"><a href="#Contacts" class="nav_text">Contacts</a></p>
+                </div>
+            </div>
+
+            <div class="footer_sec_icon">
+                <img src="./images/Youtube.svg" alt="Youtube">
+                <img src="./images/Instagram.svg" alt="Instagram">
+                <img src="./images/Facebook.svg" alt="Facebook">
+                <img src="./images/Twitter.svg" alt="Twitter">
+                <img src="./images/Pinterest.svg" alt="Pinterest">
+            </div>
+        </div>
+
+        <div class="footer_line"></div>
+
+        <div class="footer_sec_last_line">
+            <p style="margin-top: 0; margin-bottom: 0;">© 2021</p>
+            <p style="margin-top: 0; margin-bottom: 0;">The Rolling Scopes School</p>
+            <p style="margin-top: 0; margin-bottom: 0;">S-SanekS-S</p>
+        </div>
+    </div>
 </footer>
 </body>
 
