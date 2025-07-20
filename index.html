@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Базовая разметка HTML</title>
-
+  <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
   <style>
 
     body {
@@ -644,24 +644,28 @@
         color: #ffffff;
         margin-top: 0;
         margin-bottom: 0;
+        list-style-type: none;
     }
 
     .footer_sec_icon{
         display: flex;
         justify-content: space-between;
-        width: 340px;
+        width: 300px;
         height: 48px;
         position: absolute;
         top: 87px;
         left: 1100px;
+        list-style-type: none;
+        margin: 0 0 0 0;
     }
 
     .footer_line{
-        width: 100%;
+        width: 1920px;
         height: 3px;
         background: #666666;
         position: absolute;
         top: 265px;
+        left: -240px;
     }
 
     .footer_sec_last_line{
@@ -809,7 +813,7 @@
     <div class="explore_section">
 
         <div class="explore_left_section">
-            <h1 class="wel_text1" style="font-size: 65px; margin: 15px 0 20px 0;">picture explore</h1>
+            <h2 class="wel_text1" style="font-size: 65px; margin: 15px 0 20px 0;">picture explore</h2>
             <div class="rectangle_visiting" style="width: 660px;"></div>
             <p class="explore_text">Las Meninas is a 1656 painting by Diego Velázquez, the leading artist of the Spanish Golden Age.</p>
             <p class="explore_text">It was cleaned in 1984 to remove a <span style="color: rgb(242, 255, 0);">"yellow veil"</span> of dust that had gathered since the previous restoration in the 19th century.</p>
@@ -970,7 +974,8 @@
     </div>
   </section>
 
-  <img width="1920" height="400" src="./images/parallax1.svg" alt="parallax photo">
+    <img width="1920" height="400" src="./images/parallax1.svg" alt="parallax photo">
+  
 
   <section id="Contacts">
     <div class="Contacts_sec">
@@ -986,8 +991,8 @@
 
             <div class="Contacts_text2">
                 <p style="font-family: 'Roboto'; font-weight: 300; font-size: 22px; line-height: 100%; letter-spacing: 0; margin:0 0 0 0; color: #000000" >adress: 75001 Paris, France</p>
-                <p style="font-family: 'Roboto'; font-weight: 300; font-size: 22px; line-height: 100%; letter-spacing: 0; margin:0 0 0 0; color: #000000">phone: +33(0) 1 40 20 50 50</p>
-                <p style="font-family: 'Roboto'; font-weight: 300; font-size: 22px; line-height: 100%; letter-spacing: 0; margin:0 0 0 0; color: #000000">mail: info@louvre.fr</p>
+                <p style="font-family: 'Roboto'; font-weight: 300; font-size: 22px; line-height: 100%; letter-spacing: 0; margin:0 0 0 0; color: #000000">phone: <a href="tel:+33(0)140205050">+33(0)1-40-20-50-50</a></p>
+                <p style="font-family: 'Roboto'; font-weight: 300; font-size: 22px; line-height: 100%; letter-spacing: 0; margin:0 0 0 0; color: #000000">mail: <a href="mailto:info@louvre.fr">info@louvre.fr</a></p>
             </div>
         </div>
 
@@ -1012,26 +1017,32 @@
             </div>
 
             <div class="footer_sec_text2">
-                <div class="footer_sec_text2_2">
-                    <p style="margin-top: 0; margin-bottom: 0;"><a href="#Visiting" class="nav_text">Visiting</a></p>
-                    <p style="margin-top: 0; margin-bottom: 0;"><a href="#Explore" class="nav_text">Explore</a></p>
-                    <p style="margin-top: 0; margin-bottom: 0;"><a href="#Video" class="nav_text">Video</a></p>
-                </div>
+                <nav class="footer_sec_text2_2">
+                    <ul class="footer_sec_text2_2">
+                        <li style="margin-top: 0; margin-bottom: 0;"><a href="#Visiting" class="nav_text">Visiting</a></li>
+                        <li style="margin-top: 0; margin-bottom: 0;"><a href="#Explore" class="nav_text">Explore</a></li>
+                        <li style="margin-top: 0; margin-bottom: 0;"><a href="#Video" class="nav_text">Video</a></li>
+                    </ul>          
+                </nav>
 
-                <div class="footer_sec_text2_2">
-                    <p style="margin-top: 0; margin-bottom: 0;"><a href="#Gallery" class="nav_text">Gallery</a></p>
-                    <p style="margin-top: 0; margin-bottom: 0;"><a href="#Tickets" class="nav_text">Tickets</a></p>
-                    <p style="margin-top: 0; margin-bottom: 0;"><a href="#Contacts" class="nav_text">Contacts</a></p>
-                </div>
+                <nav class="footer_sec_text2_2">
+                    <ul class="footer_sec_text2_2">
+                        <li style="margin-top: 0; margin-bottom: 0;"><a href="#Gallery" class="nav_text">Gallery</a></li>
+                        <li style="margin-top: 0; margin-bottom: 0;"><a href="#Tickets" class="nav_text">Tickets</a></li>
+                        <li style="margin-top: 0; margin-bottom: 0;"><a href="#Contacts" class="nav_text">Contacts</a></li>
+                    </ul>          
+                </nav>
             </div>
 
-            <div class="footer_sec_icon">
-                <img src="./images/Youtube.svg" alt="Youtube">
-                <img src="./images/Instagram.svg" alt="Instagram">
-                <img src="./images/Facebook.svg" alt="Facebook">
-                <img src="./images/Twitter.svg" alt="Twitter">
-                <img src="./images/Pinterest.svg" alt="Pinterest">
-            </div>
+            
+                <ul class="footer_sec_icon">
+                        <li style="list-style: none;"><img src="./images/Youtube.svg" alt="Youtube"></li>
+                        <li style="list-style: none;"><img src="./images/Instagram.svg" alt="Instagram"></li>
+                        <li style="list-style: none;"><img src="./images/Facebook.svg" alt="Facebook"></li>
+                        <li style="list-style: none;"><img src="./images/Twitter.svg" alt="Twitter"></li>
+                        <li style="list-style: none;"><img src="./images/Pinterest.svg" alt="Pinterest"></li>
+                </ul> 
+            
         </div>
 
         <div class="footer_line"></div>
@@ -1046,3 +1057,4 @@
 </body>
 
 </html>
+
