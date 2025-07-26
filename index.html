@@ -9,6 +9,8 @@
 
     body {
     margin: 0px;
+    transition: all 1s;
+    overflow-x: hidden;
     }
 
     a{
@@ -89,6 +91,7 @@
         margin-left: auto;
         margin-right: auto;
         position: relative;
+        transition: all 1s;
     }
 
     .welcome_left_block{
@@ -119,6 +122,18 @@
         color: #FFFFFF;
     }
 
+
+    .wel_text2_2{
+        font-family: 'Roboto';
+        font-size: 28px;
+        line-height: 100%;
+        letter-spacing: 2px;
+        font-weight: 300;
+        position: absolute;
+        color: #FFFFFF;
+        top: 205px;
+    }
+
     button {
         border-radius: 20px;
         width:360px;
@@ -133,7 +148,7 @@
         color: #000000; 
     }
 
-    .pagination{
+    .pagination_slide{
         display: flex;
         align-items: center;
         justify-content: space-around;
@@ -200,6 +215,8 @@
         width: 1440px;
         height: 3px;
         background-color: #710707;
+        position: absolute;
+        top: 125px;
     }
 
     .photos_area_visiting{
@@ -268,18 +285,29 @@
 
     .explore_section{
         display: flex;
-        align-items: center;
+        
         justify-content: space-between;
         width: 1440px;
         height: 715px;
         margin: auto;
+        position: relative;
              
+    }
+
+    .explore_line{
+        width: 600px;
+        height: 2px;
+        background: #710707;
+        position: absolute;
+        top: 95px;
     }
 
     .explore_left_section{
         width: 660px;
-        height: 715px;
-
+        height: 474px;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
     }
 
     .explore_text{
@@ -313,6 +341,7 @@
         height: 1246px;
         position: relative;
         margin: auto;
+        transition: all 1s;
     }
 
     .video_text{
@@ -337,6 +366,16 @@
         height: 254px;
         position: absolute;
         top: 940px;
+    }
+
+    .video_big{
+        width: 1440px;
+        height:650px;
+    }
+
+    .video_lil{
+        width: 452px;
+        height:254px;
     }
 
     .video_pagination{
@@ -366,7 +405,8 @@
         top: 75px;
         position: relative;
         margin: auto;
-        flex-wrap: wrap;    
+        flex-wrap: wrap;
+        transition: all 1s;    
     }
 
     .gallery_sec_text{
@@ -375,12 +415,21 @@
         height: 90px;
     }
 
-    .gallery_sec_photo{
+    .gallery_sec_photo1{
         display: flex;
         justify-content: space-between;
         flex-direction:column;
         width: 456px;
         height: 1950px;
+    }
+
+    .gallery_sec_photo2{
+        display: flex;
+        justify-content: space-between;
+        flex-direction:column;
+        width: 456px;
+        height: 1910px;
+        margin-top: 50px;
     }
 
     .gallery_gradient{
@@ -391,6 +440,80 @@
         background: linear-gradient(to bottom,  transparent, #000000);
     }
 
+
+    .gallery_column1_photo_1{
+        width: 456px;
+        height: 570px;
+        background-image: url(./images/gallery/galery2_1.svg);
+    }
+
+    .gallery_column1_photo_2{
+        background-image: url(./images/gallery/galery9_1.svg);
+        width: 456px;
+        height: 570px;
+    }
+    
+    .gallery_column1_photo_3{
+        background-image: url(./images/gallery/galery4_1.svg);
+        width: 456px;
+        height: 456px;
+    }
+
+    .gallery_column1_photo_4{
+        background-image: url(./images/gallery/galery6_1.svg);
+        width: 452px;
+        height: 240px;
+    }
+
+
+
+    .gallery_column2_photo_1{
+        background-image: url(./images/gallery/galery1_1.svg);
+        width: 456px;
+        height: 456px;
+    }
+
+    .gallery_column2_photo_2{
+        background-image: url(./images/gallery/galery8_1.svg);
+        width: 456px;
+        height: 570px;
+    }
+
+    .gallery_column2_photo_3{
+        background-image: url(./images/gallery/galery3_1.svg);
+        width: 456px;
+        height: 570px;
+    }
+
+    .gallery_column2_photo_4{
+        background-image: url(./images/gallery/galery5_1.svg);
+        width: 452px;
+        height: 292px;
+    }
+
+
+
+    .gallery_column3_photo_1{
+        background-image: url(./images/gallery/galery7_1.svg);
+        width: 456px;
+        height: 570px;
+    }
+    .gallery_column3_photo_2{
+        background-image: url(./images/gallery/galery10_1.svg);
+        width: 456px;
+        height: 456px;
+    }
+    .gallery_column3_photo_3{
+        background-image: url(./images/gallery/galery15_1.svg);
+        width: 456px;
+        height: 456px;
+    }
+    .gallery_column3_photo_4{
+        background-image: url(./images/gallery/galery12_1.svg);
+        width: 452px;
+        height: 342px;
+    }
+   
 
     #Tickets{
 
@@ -410,6 +533,7 @@
         width: 1440px;
         height: 743px;
         margin: auto;
+        position: relative;
     }
 
     .tickets_text{
@@ -522,7 +646,13 @@
         border-radius: 2px;
         position: absolute;
         top: 393px;
+        font-weight: 300; font-size: 22px; line-height: 100%; letter-spacing: 2px;  color: #FFFFFF
     }
+
+    .tickets_total{
+        position: absolute; top: 300px;
+    }
+
 
 
 
@@ -552,7 +682,7 @@
         flex-direction:column;
         justify-content: space-between;
         width: 1440px;
-        height: 133px;
+        height: 80px;
         
     }
 
@@ -671,7 +801,6 @@
         background: #666666;
         position: absolute;
         top: 265px;
-        left: -240px;
     }
 
     .footer_sec_last_line{
@@ -694,7 +823,9 @@
         scroll-behavior: smooth;
     }
 
-    #Parallax{
+    
+
+    .parallax{
         width: 100%;
         height: 400px;
         background-image: url(./images/parallax1.svg);
@@ -712,6 +843,934 @@
 
     a:hover{
         color: #D2B183;
+    }
+
+    .text_gold{
+        font-weight: 400; font-size: 65px; line-height: 90px; letter-spacing: 5px; text-transform: uppercase; margin:20px 0 20px 0; color: #9D8665;
+    }
+
+    .text_white{
+        font-size: 65px; margin: 0px;
+        font-family: 'Forum';
+        font-size: 65px;
+        line-height: 90px;
+        letter-spacing: 5px;
+        font-weight: 400;
+        text-transform: uppercase;
+        color: #FFFFFF;
+    }
+
+    .explore_photo{
+        position: absolute; bottom: 0;
+    }
+    .explore_slider{
+        position: absolute; left: 421.5px;
+    }
+
+
+
+
+    @media(max-width:1024px) {
+    
+    .text_gold{
+        font-weight: 400; font-size: 40px; line-height: 90px; letter-spacing: 5px; text-transform: uppercase; margin:0 0 0 0; color: #9D8665;
+    }
+    
+    .text_white{
+        font-size: 40px; margin: 0;  
+        font-family: 'Forum';
+        font-size: 40px;
+        line-height: 90px;
+        letter-spacing: 5px;
+        font-weight: 400;
+        text-transform: uppercase;
+        color: #FFFFFF;
+    }
+
+    body {
+        margin: 0px;
+        overflow-x: hidden;
+    }
+
+
+    header{
+        display: flex;
+        background: #030303;
+        width: 100%;
+        height: 130px;
+    }
+
+    .header_inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 984px;
+        height: 130px;
+        margin-left: auto;
+        margin-right: auto;
+        position: relative;
+       
+    }
+
+    #logo {
+        width: 199px;
+        height: 33px;
+        top: 49px;
+    }
+
+    .navigation {
+        width: 32px;
+        height: 18px;
+        display: none;
+    }
+
+    .nav_text{
+        font-family: 'Roboto';
+        font-size: 22px;
+        font-weight: 200;
+        color: #FFFFFF;
+    }
+
+
+    
+    .nav_ul{
+        word-spacing: 1.405em;
+        letter-spacing: 1.35505em;
+    }
+  
+
+    .nav_li{
+        
+        word-spacing: normal;
+        letter-spacing: normal;
+       
+        
+    }
+
+
+     #Welcome{
+        width: 100%;
+        height: 585px;
+        background: #030303;
+    }
+
+    .Welcome_sec{
+        display: flex;
+        width: 984px;
+        height: 585px;
+        margin-left: auto;
+        margin-right: auto;
+        position: relative;
+    }
+
+    .welcome_left_block{
+        width: 396px;
+        height: 393px;
+        top: 50px;
+        position: absolute;
+    }
+
+    .wel_text1{
+        font-family: 'Forum';
+        font-size: 40px;
+        line-height: 90px;
+        letter-spacing: 5px;
+        font-weight: 400;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        
+    }
+
+    .wel_text2{
+        font-family: 'Roboto';
+        font-size: 20px;
+        line-height: 100%;
+        letter-spacing: 2px;
+        font-weight: 300;
+        position: absolute;
+        color: #FFFFFF;
+    }
+
+    .wel_text2_2{
+        font-family: 'Roboto';
+        font-size: 28px;
+        line-height: 100%;
+        letter-spacing: 2px;
+        font-weight: 300;
+        position: absolute;
+        color: #FFFFFF;
+        top: 205px;
+    }
+
+    button {
+        border-radius: 20px;
+        width:300px;
+        height:60px;
+        top: 333px;
+        background-color: #710707;
+        transition: 0.5s; 
+    }
+
+    button:hover{
+        background-color: #D2B183;
+        color: #000000; 
+    }
+
+    .pagination{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        position: absolute;
+        width: 700px;
+        height: 120px;
+        right: 0px;
+        top: 465px;
+        bottom: 0;
+        background-color: #030303;     
+    }
+
+    .pagination_slide{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        position: absolute;
+        width: 401px;
+        height: 40px;
+        left: 224px;
+        top: 40px;
+        background-color: #030303;
+    }
+
+    .pagination_text{
+        font-family: 'Roboto';
+        font-size: 20px;
+        line-height: 40px;
+        letter-spacing: 0px;
+        font-weight: 400;
+        color: #FFFFFF;
+        text-transform: uppercase;
+    }
+    
+    .slide{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 170px;
+        height: 12px;
+        
+    }
+
+    .slide_pagination{
+        width: 12px;
+        height: 12px;
+        background-color: #FFFFFF;
+    }
+
+    .slide_pagination_active{
+        width: 12px;
+        height: 12px;
+        background-color: #D2B183;
+    }
+
+
+
+
+    #Visiting{
+        display: flex;
+        width: 100%;
+        height: 1433px;
+        background: #FFFFFF;
+        align-items: center;
+    }
+
+    .visiting_area{
+        display: flex;
+        flex-direction:column;
+        justify-content: space-between;
+        
+        width: 984px;
+        height: 1313px;
+        margin: auto;
+        position: relative;
+    }
+
+    .line_visiting{
+        width: 984px;
+        height: 3px;
+        background-color: #710707;
+        position: absolute;
+        top: 95px;
+        margin: 15px 0 15px 0;
+    }
+
+    .photos_area_visiting{
+        display: flex;
+        width: 772px;
+        height: 1155px;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .photo_visiting{
+        display: flex;
+        width: 332px;
+        height: 345px;
+        flex-direction:column;
+        margin: auto;
+    }
+
+    .text_main_visiting{
+        font-family: 'Forum';
+        font-size: 24px;
+        line-height: 100%;
+        letter-spacing: 3px;
+        font-weight: 400;
+        color: #000000;
+        text-transform: uppercase;
+        margin:25px 0 -10px 0;
+    }
+
+    .rectangle_visiting{
+        width: 150px;
+        height: 2px;
+        background: #710707;
+        margin:20px 0 5px 0;
+    }
+
+    .text_undermain_visiting{
+        font-family: 'Roboto';
+        font-size: 20px;
+        line-height: 100%;
+        font-weight: 200;
+        color: #000000;
+        margin:10px 0 -10px 0;
+    }
+
+    .text_under_undermain_visiting{
+        font-family: 'Roboto';
+        font-size: 16px;
+        line-height: 100%;
+        font-weight: 200;
+        color: #000000;
+        margin:15px 0 -10px 0;
+    }
+
+
+
+
+
+    #Explore{
+        display: flex;
+        align-items: center;
+        width: 100%;
+        height: 1149px;
+        background-color: #030303;
+    }
+
+    .explore_section{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 984px;
+        height: 1029px;
+        margin: auto;
+        position: relative;
+        transition: all 1s;
+             
+    }
+
+    .explore_left_section{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        width: 984px;
+        height: 267px;
+        position: absolute;
+        top: 0;
+
+    }
+
+    .explore_text{
+        font-family: 'Roboto';
+        font-size: 18px;
+        line-height: 38.5px;
+        letter-spacing: 0;
+        font-weight: 300;
+        color: #FFFFFF;
+        margin: 0;
+    }
+
+    .explore_line{
+        width: 984px;
+        height: 2px;
+        background: #710707;
+        position: absolute;
+        top: 95px;
+        margin: 15px 0 15px 0;
+    }
+
+    .explore_img{
+        width: 720px;
+        height: 700px;
+        position: absolute;
+        left: 132px;
+        top: 329px;  
+    }
+    .explore_photo{
+        position: absolute; bottom: 0;
+    }
+    .explore_slider{
+        position: absolute; left: 572,5px;
+    }
+
+
+
+
+
+    #Video{
+        display: flex;
+        align-items: center;
+        width: 100%;
+        height: 1001px;
+    }
+
+    .video_section{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 984px;
+        height: 881px;
+        position: relative;
+        margin: auto;
+        transition: all 1s;
+    }
+
+    .video_text{
+        display: flex;
+        align-items: center;
+        width: 492px;
+        height: 75px;
+    }
+    
+    .video_video{
+        position: absolute;
+        width: 984px;
+        height: 504px;
+        top: 115px;
+    }
+
+    .video_video2{ 
+        display: flex;
+        width: 984px;
+        align-items: center;
+        justify-content: space-between;
+        height: 170px;
+        position: absolute;
+        top: 659px;
+    }
+
+    .video_big{
+        width: 984px;
+        height: 504px;
+    }
+
+    .video_lil{
+        width: 300px;
+        height: 170px;
+    }
+
+    .video_pagination{
+        display: flex;
+        justify-content: space-between;
+        width: 200px;
+        height: 12px;
+        position: absolute;
+        top: 869px;
+        left: 392px;
+    }
+
+
+
+
+    #Gallery{
+        width: 100%;
+        height: 1460px;
+        background-color: #030303;
+    }
+
+    .gallery_section{
+        display: flex;
+        position: relative;
+        justify-content: space-between;
+        width: 984px;
+        height: 1400px;
+        margin-left: auto;
+        margin-right: auto;
+        top: 60px;
+        flex-wrap: wrap; 
+        align-items: end;
+        transition: all 1s;   
+    }
+
+    .gallery_sec_text{
+        display: flex;
+        width: 968px;
+        height: 75px;
+        position: absolute;
+        top: 0;
+    }
+
+    .gallery_sec_photo1{
+        display: flex;
+        justify-content: space-between;
+        flex-direction:column;
+        width: 304px;
+        height: 1275px;
+    }
+
+
+    .gallery_sec_photo2{
+        display: flex;
+        justify-content: space-between;
+        flex-direction:column;
+        width: 304px;
+        height: 1225px;
+        margin-top: 50px;
+    }
+
+    .gallery_gradient{
+        width: 1024px;
+        height: 239px;
+        top: 1161px;
+        position: absolute;
+        background: linear-gradient(to bottom,  transparent, #000000);
+    }
+
+    .gallery_column1_photo_1{
+        width: 304px;
+        height: 304px;
+        background-image: url(./images/gallery/galery1_1.svg);
+        background-size: cover; 
+    }
+
+    .gallery_column1_photo_2{
+        background-image: url(./images/gallery/galery2_1.svg);
+        width: 304px;
+        height: 380px;
+        background-size: cover;
+    }
+    
+    .gallery_column1_photo_3{
+        background-image: url(./images/gallery/galery11_1.svg);
+        width: 304px;
+        height: 304px;
+        background-size: cover;
+    }
+
+    .gallery_column1_photo_4{
+        background-image: url(./images/gallery/galery5_1.svg);
+        width: 304px;
+        height: 162px;
+        background-size: cover;
+    }
+
+
+
+    .gallery_column2_photo_1{
+        background-image: url(./images/gallery/galery7_1.svg);
+        width: 304px;
+        height: 380px;
+        background-size: cover;
+    }
+
+    .gallery_column2_photo_2{
+        background-image: url(./images/gallery/galery8_1.svg);
+        width: 304px;
+        height: 380px;
+        background-size: cover;
+    }
+
+    .gallery_column2_photo_3{
+        background-image: url(./images/gallery/galery13_1.svg);
+        width: 304px;
+        height: 228px;
+        background-size: cover;
+    }
+
+    .gallery_column2_photo_4{
+        background-image: url(./images/gallery/galery14_1.svg);
+        width: 304px;
+        height: 210px;
+        background-size: cover;
+    }
+
+
+
+    .gallery_column3_photo_1{
+        background-image: url(./images/gallery/galery12_1.svg);
+       width: 304px;
+        height: 228px;
+        background-size: cover;
+    }
+    .gallery_column3_photo_2{
+        background-image: url(./images/gallery/galery3_1.svg);
+        width: 304px;
+        height: 380px;
+        background-size: cover;
+    }
+    .gallery_column3_photo_3{
+        background-image: url(./images/gallery/galery4_1.svg);
+        width: 304px;
+        height: 304px;
+        background-size: cover;
+    }
+    .gallery_column3_photo_4{
+        background-image: url(./images/gallery/galery6_1.svg);
+        width: 304px;
+        height: 237px;
+        background-size: cover;
+    }
+
+
+
+
+
+    #Tickets{
+
+        display: flex;
+        align-items: center;
+        width: 100%;
+        height: 718px;
+
+    }
+
+    .tickets_sec{
+
+        display: flex;
+        
+        flex-direction:column;
+        justify-content: space-between;
+        width: 984px;
+        height: 598px;
+        margin: auto;
+        position: relative;
+        transition: all 1s;
+    }
+
+    .tickets_text{
+        
+        width: 984px;
+        height: 75px;
+        
+    }
+
+    .tickets_photo_and_amount{
+        width: 968px;
+        height: 440px;
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+    }
+
+    .tickets_photo{
+        width: 700px;
+        height: 440px;
+    }
+
+    .tickets_amount{
+        width: 175px;
+        height: 440px;
+        display: flex;
+        position: relative;
+        justify-content: space-between  ;
+    }
+
+    .tickets_type{
+        width: 270px;
+        height: 211px;
+        justify-content: space-between;
+        display: flex;
+        position: relative;
+        flex-direction:column;
+        display: none;
+        
+    }
+
+    .tickets_form{
+        width: 175px;
+        height: 321px;
+        justify-content: space-around;
+        display: flex;
+        position: absolute;
+        top: 83px;
+        flex-direction:column;        
+    }
+
+    .tickets_amount2{
+        width: 175px;
+        height: 440px;
+        display: flex;
+        position: relative;
+        margin-right: 0;
+        justify-content: end;
+    }
+
+    .ticlets_text_type1{
+        font-family: 'Roboto';
+        font-size: 28px;
+        line-height: 100%;
+        letter-spacing: 0;
+        font-weight: 700;
+        color: #000000;
+        margin: 0 0 20px 0;
+    }
+
+    .ticlets_text_type2{
+        font-family: 'Roboto';
+        font-size: 22px;
+        line-height: 100%;
+        letter-spacing: 0;
+        font-weight: 300;
+        color: #000000;
+    }
+
+    .tickets_amount3{
+        width: 175px;
+        height: 205px;
+        display: flex;
+        position: absolute;
+        top: 58px;
+        margin-right: 0;
+        flex-direction:column; 
+        justify-content: space-between;
+    }
+
+    .tickets_box{
+        width: 172px;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        border: 3px solid #000000;
+        justify-content: space-between;
+    }
+
+    .tickets_button{
+        width: 175px;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #030303;
+        border-radius: 2px;
+        position: absolute;
+        top: 390px;
+        font-weight: 300; font-size: 22px; line-height: 100%; letter-spacing: 2px;  color: #FFFFFF
+    }
+
+    .tickets_total{
+        position: absolute; top: 288px;
+    }
+
+
+
+
+
+
+
+     #Contacts{
+
+        display: flex;
+        align-items: center;
+        width: 100%;
+        height: 734px;
+
+    }
+
+    .Contacts_sec{
+
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 984px;
+        height: 614px;
+        margin: auto;
+        position: relative;
+        transition: all 1s;
+    }
+
+    .Contacts_head{
+        display: flex;
+        
+        flex-direction:column;
+        justify-content: space-between;
+        width: 984px;
+        height: 75px;
+        
+    }
+
+    .Contacts_text{
+        display: flex;
+        justify-content: space-between;
+        width: 274px;
+        flex-direction:column;
+        height: 244px;
+        position: absolute;
+        top: 190px;
+    }
+
+    .Contacts_text2{
+        display: flex;
+        justify-content: space-between;
+        width: 274px;
+        flex-direction:column;
+        height: 99px;
+        position: absolute;
+        top: 116px;
+    }
+
+    .Contacts_photo{
+        width: 694px;
+        height: 454px;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        
+    }
+
+
+
+    footer{
+        display: flex;
+        align-items: center;
+        width: 100%;
+        height: 368px;
+        background-color: #030303;
+    }
+
+    .footer_sec{
+        display: flex;
+        justify-content: space-between;
+        width: 984px;
+        height: 368px;
+        margin: auto;
+        position: relative;
+        transition: all 1s;
+    }
+
+    .footer_sec_text1{
+        width: 984px;
+        height: 133px;
+        position: absolute;
+        top: 60px;
+    }
+
+    .footer_sec_logo{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 194px;
+        height: 33px;
+        position: absolute;
+        font-family: 'Forum';
+        font-size: 24px;
+        line-height: 100%;
+        letter-spacing: 5px;
+        font-weight: 400;
+        text-transform: uppercase;
+        color: #ffffff;
+    }
+
+    .footer_sec_text2{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 313px;
+        height: 128px;
+        position: absolute;
+        top: 5px;
+        left: 239px;
+    }
+
+    .footer_sec_text2_2{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        width: 107px;
+        height: 128px;
+        font-family: 'Roboto';
+        font-size: 22px;
+        line-height: 100%;
+        letter-spacing: 2px;
+        font-weight: 200;
+        color: #ffffff;
+        margin-top: 0;
+        margin-bottom: 0;
+        list-style-type: none;
+    }
+
+    .footer_sec_icon{
+        display: flex;
+        justify-content: space-between;
+        width: 340px;
+        height: 48px;
+        position: absolute;
+        top: 85px;
+        left: 604px;
+        list-style-type: none;
+        margin: 0 0 0 0;
+    }
+
+    .footer_line{
+        width: 1024px;
+        height: 3px;
+        background: #666666;
+        position: absolute;
+        top: 243px;
+    }
+
+    .footer_sec_last_line{
+        display: flex;
+        justify-content: space-between;
+        width: 984px;
+        height: 22px;
+        position: absolute;
+        top: 296px;
+        font-family: 'Roboto';
+        font-size: 22px;
+        line-height: 100%;
+        letter-spacing: 2px;
+        font-weight: 200;
+        color: #ffffff;
+        margin: 0;
+        
+    }
+    
+    html {
+        scroll-behavior: smooth;
+    }
+
+    #Parallax{
+        width: 100%;
+        height: 400px;
+        background-image: url(./images/parallax2.svg);
+        background-attachment: fixed;
+        background-position: center;
+        background-size: cover;
+    }
+
+    a{
+        transition: 0.5s;
+        color: #000000;
+    }
+
+    
+
+    a:hover{
+        color: #D2B183;
+    }
+        
     }
   </style>
     
@@ -755,24 +1814,26 @@
 
                 <div class="wel_text1"><h2 class="wel_text1" style="margin: 0 0 0 0;">Welcome</h2></div>
                 <div class="wel_text1">to the louvre</div>
-                <div class="wel_text2" style="top: 205px;">From the castle to the museum</div>
-                <button class="wel_text2" id="button" style="font-size: 22px; align-content: center; text-align: center; border: none;">Discover the Louvre</button>
+                <div class="wel_text2_2">From the castle to the museum</div>
+                <button class="wel_text2" id="button" style="align-content: center; text-align: center; border: none;">Discover the Louvre</button>
             </div>
             
-            <div class="pagination" >
-                <div class="pagination_text">01|05</div>
+            <div class="pagination">
+                <div class="pagination_slide" >
+                    <div class="pagination_text">01|05</div>
                 
-                <div class="slide">
-                    <div class="slide_pagination_active"></div>
-                    <div class="slide_pagination"></div>
-                    <div class="slide_pagination"></div>
-                    <div class="slide_pagination"></div>
-                    <div class="slide_pagination"></div>
-                </div>
+                    <div class="slide">
+                        <div class="slide_pagination_active"></div>
+                        <div class="slide_pagination"></div>
+                        <div class="slide_pagination"></div>
+                        <div class="slide_pagination"></div>
+                        <div class="slide_pagination"></div>
+                    </div>
                 
-                <div class="pagination_text" >
-                    <img src="./images/arrow_left.svg" alt="arrow left">
-                    <img src="./images/arrow_right.svg" alt="arrow rifght">
+                    <div class="pagination_text" >
+                        <img src="./images/arrow_left.svg" alt="arrow left">
+                        <img src="./images/arrow_right.svg" alt="arrow rifght">
+                    </div>
                 </div>
             </div>
 
@@ -783,7 +1844,7 @@
 
     <section id="Visiting">
         <div class="visiting_area">
-            <h2 style="font-weight: 400; font-size: 65px; line-height: 90px; letter-spacing: 5px; text-transform: uppercase; margin:20px 0 20px 0; color: #9D8665">virtual tour</h2>
+            <h2 class="text_gold"">virtual tour</h2>
             <div class="line_visiting"></div>
             <div class="photos_area_visiting">
                 
@@ -838,17 +1899,19 @@
     <div class="explore_section">
 
         <div class="explore_left_section">
-            <h2 class="wel_text1" style="font-size: 65px; margin: 15px 0 20px 0;">picture explore</h2>
-            <div class="rectangle_visiting" style="width: 660px;"></div>
-            <p class="explore_text">Las Meninas is a 1656 painting by Diego Velázquez, the leading artist of the Spanish Golden Age.</p>
-            <p class="explore_text">It was cleaned in 1984 to remove a <span style="color: rgb(242, 255, 0);">"yellow veil"</span> of dust that had gathered since the previous restoration in the 19th century.</p>
-            <p class="explore_text">The cleaning provoked furious protests, not because the picture had been damaged in any way, but because it looked different.</p>
+            <h2 class="text_white">picture explore</h2>
+            <div class="explore_line"></div>
+            <div>
+                <p class="explore_text">Las Meninas is a 1656 painting by Diego Velázquez, the leading artist of the Spanish Golden Age.</p>
+                <p class="explore_text">It was cleaned in 1984 to remove a <span style="color: rgb(242, 255, 0);">"yellow veil"</span> of dust that had gathered since the previous restoration in the 19th century.</p>
+                <p class="explore_text">The cleaning provoked furious protests, not because the picture had been damaged in any way, but because it looked different.</p>
+            </div>
         </div>
 
         <div class="explore_img">
-            <img style="position: absolute; bottom: 0;" src="./images/explore_photo_2.svg" alt="phoyo of drawing">
-            <img style="position: absolute; bottom: 0;" src="./images/explore_photo_1.svg" alt="phoyo of drawing">
-            <img style="position: absolute; left: 421.5px;" src="./images/explore_slider.svg" alt="slider">
+            <img class="explore_photo" src="./images/explore_photo_2.svg" alt="phoyo of drawing">
+            <img class="explore_photo" src="./images/explore_photo_1.svg" alt="phoyo of drawing">
+            <img class="explore_slider" src="./images/explore_slider.svg" alt="slider">
         </div>
 
     </div>
@@ -858,7 +1921,7 @@
     <div class="video_section">
 
         <div class="video_text">
-            <h2 style="font-weight: 400; font-size: 65px; line-height: 90px; letter-spacing: 5px; text-transform: uppercase; margin:20px 0 20px 0; color: #9D8665">Video journey</h2>
+            <h2 class="text_gold">Video journey</h2>
         </div>
 
         <div class="video_text">
@@ -866,15 +1929,15 @@
         </div>
 
         <div class="video_video">
-            <iframe width="1440" height="650" src="https://www.youtube.com/embed/zp1BXPX8jcU?si=UxKZ3quuqOsGVig_" title="YouTube video player" style="border:0;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <iframe class="video_big" src="https://www.youtube.com/embed/zp1BXPX8jcU?si=UxKZ3quuqOsGVig_" title="YouTube video player" style="border:0;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </div>
 
         <div class="video_video2">
-            <iframe width="452" height="254" src="https://www.youtube.com/embed/2OR0OCr6uRE?si=i-RjVdKdFiz0f-hC&amp;controls=0" title="YouTube video player" style="border:0;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <iframe class="video_lil" src="https://www.youtube.com/embed/2OR0OCr6uRE?si=i-RjVdKdFiz0f-hC&amp;controls=0" title="YouTube video player" style="border:0;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-            <iframe width="452" height="254" src="https://www.youtube.com/embed/NOhDysLnTvY?si=15vLC3IjOlo8pXzF&amp;controls=0" title="YouTube video player" style="border:0;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <iframe class="video_lil" src="https://www.youtube.com/embed/NOhDysLnTvY?si=15vLC3IjOlo8pXzF&amp;controls=0" title="YouTube video player" style="border:0;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-           <iframe width="452" height="254" src="https://www.youtube.com/embed/aWmJ5DgyWPI?si=nrXINP02La8TMoMN&amp;controls=0" title="YouTube video player" style="border:0;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+           <iframe class="video_lil" src="https://www.youtube.com/embed/aWmJ5DgyWPI?si=nrXINP02La8TMoMN&amp;controls=0" title="YouTube video player" style="border:0;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
  
         </div>
 
@@ -899,25 +1962,25 @@
             <h2 class="wel_text1" style="margin: 0 0 10px 0;">art galery</h2>
         </div>
 
-        <div class="gallery_sec_photo" style="margin-top: 50px; height: 1910px;">
-            <img width="456" height="570" src="./images/gallery/galery2_1.svg" alt="photo of gallery">
-            <img width="456" height="570" src="./images/gallery/galery9_1.svg" alt="photo of gallery">
-            <img width="456" height="456" src="./images/gallery/galery4_1.svg" alt="photo of gallery">
-            <img width="456" height="240" src="./images/gallery/galery6_1.svg" alt="photo of gallery">
+        <div class="gallery_sec_photo2">
+            <div  class="gallery_column1_photo_1"></div>
+            <div  class="gallery_column1_photo_2"></div>
+            <div  class="gallery_column1_photo_3"></div>
+            <div  class="gallery_column1_photo_4"></div>
+        </div> 
+
+        <div class="gallery_sec_photo1" >
+            <div  class="gallery_column2_photo_1"></div>
+            <div  class="gallery_column2_photo_2"></div>
+            <div  class="gallery_column2_photo_3"></div>
+            <div  class="gallery_column2_photo_4"></div>
         </div>
 
-        <div class="gallery_sec_photo" style="height: 1960px;">
-            <img width="456" height="456" src="./images/gallery/galery1_1.svg" alt="photo of gallery">
-            <img width="456" height="570" src="./images/gallery/galery8_1.svg" alt="photo of gallery">
-            <img width="456" height="570" src="./images/gallery/galery3_1.svg" alt="photo of gallery">
-            <img width="456" height="292" src="./images/gallery/galery5_1.svg" alt="photo of gallery">
-        </div>
-
-        <div class="gallery_sec_photo" style="margin-top: 50px; height: 1910px;">
-            <img width="456" height="570" src="./images/gallery/galery7_1.svg" alt="photo of gallery">
-            <img width="456" height="456" src="./images/gallery/galery10_1.svg" alt="photo of gallery">
-            <img width="456" height="456" src="./images/gallery/galery15_1.svg" alt="photo of gallery">
-            <img width="456" height="342" src="./images/gallery/galery12_1.svg" alt="photo of gallery">
+        <div class="gallery_sec_photo2" >
+            <div  class="gallery_column3_photo_1"></div>
+            <div  class="gallery_column3_photo_2"></div>
+            <div  class="gallery_column3_photo_3"></div>
+            <div  class="gallery_column3_photo_4"></div>
         </div>
 
         <div class="gallery_gradient">
@@ -930,10 +1993,11 @@
     <div class="tickets_sec ">
 
         <div class="tickets_text">
-            <h2 style="font-weight: 400; font-size: 65px; line-height: 90px; letter-spacing: 5px; text-transform: uppercase; margin:20px 0 20px 0; color: #9D8665">buy tickets</h2>
-            <div class="line_visiting"></div>
+            <h2 class="text_gold">buy tickets</h2>
+            
         </div>
 
+        <div class="line_visiting"></div>
         
 
         <div class="tickets_photo_and_amount">
@@ -985,9 +2049,9 @@
                         </div>
                     </div>
 
-                    <h3 class="ticlets_text_type1" style="position: absolute; top: 300px;">Total €220</h3>
+                    <div class="tickets_total"><p class="ticlets_text_type1" style="margin: 0;">Total €220</p></div>
 
-                        <button class="tickets_button" style="font-weight: 300; font-size: 22px; line-height: 100%; letter-spacing: 2px;  color: #FFFFFF">
+                        <button class="tickets_button" style="">
                             Buy now
                         </button>
 
@@ -1000,7 +2064,9 @@
   </section>
 
    <section id="Parallax">
-        
+        <div class="parallax">
+
+        </div>
    </section> 
   
 
@@ -1008,13 +2074,14 @@
     <div class="Contacts_sec">
 
         <div class="Contacts_head">
-            <h2 style="font-weight: 400; font-size: 65px; line-height: 90px; letter-spacing: 5px; text-transform: uppercase; margin:20px 0 20px 0; color: #9D8665">Contacts</h2>
-            <div class="line_visiting"></div>
+            <h2 class="text_gold">Contacts</h2>
         </div>
+
+        <div class="line_visiting"></div>
 
         <div class="Contacts_text">
 
-            <p style="font-family: 'Roboto'; font-weight: 500; font-size: 28px; line-height: 100%; letter-spacing: 0; margin-top: 0; color: #000000">Palais Royal Musee du Louvre</p>
+            <p style="font-family: 'Roboto'; font-weight: 500; font-size: 28px; line-height: 100%; letter-spacing: 0; margin-top: 0; color: #000000">Palais Royal <br /> Musee du Louvre</p>
 
             <div class="Contacts_text2">
                 <p style="font-family: 'Roboto'; font-weight: 300; font-size: 22px; line-height: 100%; letter-spacing: 0; margin:0 0 0 0; color: #000000" >adress: 75001 Paris, France</p>
@@ -1025,7 +2092,7 @@
 
         <div class="Contacts_photo">
 
-            <img src="./images/map.svg" alt="map">
+            <img class="Contacts_photo" src="./images/map.svg" alt="map">
 
         </div>
     </div>
