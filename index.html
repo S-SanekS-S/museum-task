@@ -119,12 +119,18 @@
         color: #FFFFFF;
     }
 
-    #button {
+    button {
         border-radius: 20px;
         width:590px;
         height:100px;
         top: 313px;
-        background-color: #710707; 
+        background-color: #710707;
+        transition: 0.5s; 
+    }
+
+    button:hover{
+        background-color: #D2B183;
+        color: #000000; 
     }
 
     .pagination{
@@ -697,6 +703,13 @@
         background-size: cover;
     }
 
+    a{
+        transition: 0.5s;
+        color: #000000;
+    }
+
+    
+
     a:hover{
         color: #D2B183;
     }
@@ -743,7 +756,7 @@
                 <div class="wel_text1"><h2 class="wel_text1" style="margin: 0 0 0 0;">Welcome</h2></div>
                 <div class="wel_text1">to the louvre</div>
                 <div class="wel_text2" style="top: 205px;">From the castle to the museum</div>
-                <div class="wel_text2" id="button" style="font-size: 22px; align-content: center; text-align: center;">Discover the Louvre</div>
+                <button class="wel_text2" id="button" style="font-size: 22px; align-content: center; text-align: center; border: none;">Discover the Louvre</button>
             </div>
             
             <div class="pagination" >
@@ -1063,8 +1076,8 @@
 
         <div class="footer_sec_last_line">
             <p style="margin-top: 0; margin-bottom: 0;">© 2021</p>
-            <p style="margin-top: 0; margin-bottom: 0;"><a href="https://rs.school">The Rolling Scopes School</a></p>
-            <p style="margin-top: 0; margin-bottom: 0;"><a href="https://github.com/S-SanekS-S">S-SanekS-S</a></p>
+            <p style="margin-top: 0; margin-bottom: 0;"><a style="color: #ffffff; " href="https://rs.school">The Rolling Scopes School</a></p>
+            <p style="margin-top: 0; margin-bottom: 0;"><a style="color: #ffffff;" href="https://github.com/S-SanekS-S">S-SanekS-S</a></p>
         </div>
     </div>
 </footer>
